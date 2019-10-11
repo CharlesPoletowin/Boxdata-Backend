@@ -2,4 +2,11 @@ This is a project in inesa
 
 UTC/GMT is 06:57 on Thursday, October 10, 2019 
 
-2019/10/10 test for connect the cloud server of Mongodb and save it in local db
+2019/10/10 test for connect the cloud server of Mongodb and save it in local db Mongodb
+
+****
+
+UTC/GMT is 09:13 on Friday, October 11, 2019
+
+Get data from the cloud and save it in MySql
+try to test for websocket connection and send the data from the cloud to frontend

@@ -44,7 +44,7 @@ class get_data:
                 value = data['Value']
                 timestamp = data['Timestamp']
                 myquery = {"Timestamp": timestamp}
-                findTimeStamp = self.mycol_to.find_one (myquery)
+                # findTimeStamp = self.mycol_to.find_one (myquery)
                 mydict = {"Timestamp": timestamp,
                           MonitorName: value,
                           'isNormal': True}

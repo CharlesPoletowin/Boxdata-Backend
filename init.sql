@@ -1,0 +1,12 @@
+create database monitor;
+use dp;
+create table pressure (v decimal(5,3), ts datetime, IsNormal boolean);
+create table temperature1(v decimal(5,3),ts datetime, IsNormal boolean);
+create table temperature2(v decimal(5,3),ts datetime, IsNormal boolean);
+create table humidity(v decimal(5,3),ts datetime,IsNormal boolean);
+create table o3water(v decimal(5,3),ts datetime, IsNormal boolean);
+create table ino3(v decimal(5,3),ts datetime, IsNormal boolean);
+create table outo3(v decimal(5,3),ts datetime, IsNormal boolean);
+create table weight(v decimal(5,3),ts datetime, IsNormal boolean);
+create table channel1(v decimal(5,3),ts datetime, IsNormal boolean);
+create table ph(v decimal(5,3),ts datetime, IsNormal boolean);
