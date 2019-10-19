@@ -42,4 +42,4 @@ def test_connect():
 
 
 if __name__ == '__main__':
-    socketio.run(app,host='0.0.0.0',port=5101)
+    socketio.run(app,host='0.0.0.0',port=5101,debug=True)

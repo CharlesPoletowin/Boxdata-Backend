@@ -107,7 +107,7 @@
     $(document).ready(function() {
         namespace = '/test';
         var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + namespace);
-
+        console.log(location.protocol + '//' + document.domain + ':' + location.port + namespace)
         socket.on('server_response', function(res) {
             update_mychart(res);
         });

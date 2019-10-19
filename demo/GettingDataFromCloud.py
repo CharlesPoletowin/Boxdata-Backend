@@ -10,7 +10,7 @@ import threading
 import shared
 
 dict1={'水中臭氧浓度':'o3water', '重量数据':'weight', '进气臭氧浓度':'ino3', '湿度':'humidity', '温度':'temperature2', '通道':'channel1', '尾气臭氧浓度':'outo3', 'PRESSURE-0001':'pressure', 'TEMPERATURE-0001':'temperature1', 'PH':'ph'}
-config={'host':'localhost','user':'root','password':'111111','database':'dp','charset':'utf8','port':3306}
+config={'host':'localhost','user':'root','password':'111111','database':'monitor','charset':'utf8','port':3306}
 address_1 = 'mongodb://shudev2:Etp13A3NROECpQeJ1GjTbkj7OqHfoukak17BwiMgcjw6g2ap5PPZsfraINEVJ1G34UtR2MHUJCTufvhAz2uwLQ==@shudev2.documents.azure.cn:10255/?ssl=true&replicaSet=globaldb'
 
 

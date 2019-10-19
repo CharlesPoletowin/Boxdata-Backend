@@ -1,12 +1,35 @@
 create database monitor;
-use dp;
-create table pressure (v decimal(5,3), ts datetime, IsNormal boolean);
-create table temperature1(v decimal(5,3),ts datetime, IsNormal boolean);
-create table temperature2(v decimal(5,3),ts datetime, IsNormal boolean);
-create table humidity(v decimal(5,3),ts datetime,IsNormal boolean);
-create table o3water(v decimal(5,3),ts datetime, IsNormal boolean);
-create table ino3(v decimal(5,3),ts datetime, IsNormal boolean);
-create table outo3(v decimal(5,3),ts datetime, IsNormal boolean);
-create table weight(v decimal(5,3),ts datetime, IsNormal boolean);
-create table channel1(v decimal(5,3),ts datetime, IsNormal boolean);
-create table ph(v decimal(5,3),ts datetime, IsNormal boolean);
+use monitor;
+create table pressure (v decimal(7,3), ts datetime primary key, IsNormal boolean,IsChecked boolean);
+create table temperature1(v decimal(5,3),ts datetime primary key, IsNormal boolean,IsChecked boolean);
+create table humidity(v decimal(5,3),ts datetime primary key,IsNormal boolean,IsChecked boolean);
+create table locationx(v decimal(5,3),ts datetime primary key, IsNormal boolean,IsChecked boolean);
+create table locationy(v decimal(5,3),ts datetime primary key, IsNormal boolean,IsChecked boolean);
+create table vibration(v decimal(5,3),ts datetime primary key, IsNormal boolean,IsChecked boolean);
+create table i(v decimal(5,3),ts datetime primary key, IsNormal boolean,IsChecked boolean);
+create table u(v decimal(7,3),ts datetime primary key, IsNormal boolean,IsChecked boolean);
+create table voice(v decimal(5,3),ts datetime primary key, IsNormal boolean,IsChecked boolean);
+
+INSERT INTO `monitor`.`i` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('0.1', '2019:10:15 13:00', '1', '0');
+INSERT INTO `monitor`.`i` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('0.1', '2019-10-15 13:01', '1', '0');
+
+INSERT INTO `monitor`.`locationx` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('2', '2019-10-15 13:00:00', '1', '0');
+INSERT INTO `monitor`.`locationx` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('3', '2019-10-15 13:01:00', '1', '0');
+
+INSERT INTO `monitor`.`locationy` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('5', '2019-10-15 13:00:00', '1', '0');
+INSERT INTO `monitor`.`locationy` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('4', '2019-10-15 13:00:10', '1', '0');
+
+INSERT INTO `monitor`.`pressure` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('200', '2019-10-15 13:00:10', '1', '0');
+INSERT INTO `monitor`.`pressure` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('200', '2019-10-15 13:01:10', '1', '0');
+
+INSERT INTO `monitor`.`temperature1` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('22.3', '2019:10:15 13:00:00', '1', '0');
+INSERT INTO `monitor`.`temperature1` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('22.2', '2019-10-15 13:00:01', '1', '0');
+
+INSERT INTO `monitor`.`u` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('220', '2019-10-15 13:00:00', '1', '0');
+INSERT INTO `monitor`.`u` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('220', '2019-10-15 13:00:01', '1', '0');
+
+INSERT INTO `monitor`.`vibration` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('80', '2019-10-15 13:00:01', '1', '0');
+INSERT INTO `monitor`.`vibration` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('80', '2019-10-15 13:00:02', '1', '0');
+
+INSERT INTO `monitor`.`voice` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('80', '2019-10-15 13:00:01', '1', '0');
+INSERT INTO `monitor`.`voice` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('90', '2019-10-15 13:00:02', '1', '0');

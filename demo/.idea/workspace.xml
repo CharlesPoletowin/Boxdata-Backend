@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2ac31ec-4794-4395-a2b8-c0a6cd1b21ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GettingDataFromCloud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README" beforeDir="false" afterPath="$PROJECT_DIR$/../README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GetDataFromLocal.py" beforeDir="false" afterPath="$PROJECT_DIR$/GetDataFromLocal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iot_GetData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iot_GetData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GettingDataFromCloud.py" beforeDir="false" afterPath="$PROJECT_DIR$/GettingDataFromCloud.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../init.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (SocketTest.py)">
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
     <configuration name="Flask (SocketTest.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="target" value="$PROJECT_DIR$/SocketTest.py" />
@@ -55,6 +54,21 @@
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -79,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Flask server.Flask (SocketTest.py)" />
       </list>
     </recent_temporary>
@@ -95,7 +110,10 @@
       <updated>1570685507878</updated>
       <workItem from="1570685510160" duration="9546000" />
       <workItem from="1570708462173" duration="649000" />
-      <workItem from="1570759016601" duration="21682000" />
+      <workItem from="1570759016601" duration="21715000" />
+      <workItem from="1571018477721" duration="3135000" />
+      <workItem from="1571113515410" duration="9772000" />
+      <workItem from="1571129301310" duration="693000" />
     </task>
     <servers />
   </component>
@@ -116,6 +134,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/demo$Flask__SocketTest_py_.coverage" NAME="Flask (SocketTest.py) Coverage Results" MODIFIED="1570693661629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/demo$Flask__SocketTest_py_.coverage" NAME="Flask (SocketTest.py) Coverage Results" MODIFIED="1571127121924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/demo$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1571128301987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
