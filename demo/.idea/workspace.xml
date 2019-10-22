@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2ac31ec-4794-4395-a2b8-c0a6cd1b21ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/localDB.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GettingDataFromCloud.py" beforeDir="false" afterPath="$PROJECT_DIR$/GettingDataFromCloud.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/localDB.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,6 +111,7 @@
       <workItem from="1571018477721" duration="3135000" />
       <workItem from="1571113515410" duration="9772000" />
       <workItem from="1571129301310" duration="693000" />
+      <workItem from="1571719064619" duration="2734000" />
     </task>
     <servers />
   </component>

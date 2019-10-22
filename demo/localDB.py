@@ -15,9 +15,22 @@ def select_new_data():
         sql = "select * from "+str(str2)+" order by ts desc limit " + str(num)
         cur.execute(sql)
         data = cur.fetchall()
+        result = {"monitor": str2,}
+        value = []
+        time = []
+        IsNormal = []
         for row in data:
-            result = {"monitor": str2, "value": float(row[0]), "time": row[1], "IsNormal": row[2]}
-            data_result_list.append(result)
+            value.append(float(row[0]))
+            time.append(row[1])
+            IsNormal.append(row[2])
+        value.reverse()
+        time.reverse()
+        IsNormal.reverse()
+        result['value'] = value
+        result['time'] = time
+        result['IsNormal'] = IsNormal
+        # print(result)
+        data_result_list.append(result)
 
     data_result_list = []
     connection = pymysql.connect(**config)
@@ -28,9 +41,10 @@ def select_new_data():
     get_new("locationx",3)
     get_new("locationy",3)
 
-    print(data_result_list[2]['time'])
+    # print(data_result_list[2]['time'])
     cur.close()
     connection.close()
+    # print(data_result_list)
     return data_result_list
 
 
