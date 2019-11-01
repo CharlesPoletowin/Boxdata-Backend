@@ -46,6 +46,14 @@ INSERT INTO `monitor`.`u` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('220', '2
 
 INSERT INTO `monitor`.`vibration` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('80', '2019-10-15 13:00:01', '1', '0');
 INSERT INTO `monitor`.`vibration` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('80', '2019-10-15 13:00:02', '1', '0');
+UPDATE `monitor`.`vibration` SET `v` = '1' WHERE (`ts` = '2019-10-15 13:00:01');
+INSERT INTO `monitor`.`vibration` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('1', '2019-10-15 13:00:03', '1', '0');
+UPDATE `monitor`.`vibration` SET `v` = '-1' WHERE (`ts` = '2019-10-15 13:00:02');
+INSERT INTO `monitor`.`vibration` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('1.5', '2019-10-15 13:00:04', '1', '0');
+INSERT INTO `monitor`.`vibration` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('1', '2019-10-15 13:00:05', '1', '0');
+INSERT INTO `monitor`.`vibration` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('-1.5', '2019-10-15 13:00:06', '1', '0');
+INSERT INTO `monitor`.`vibration` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('1', '2019-10-15 13:00:07', '1', '0');
+INSERT INTO `monitor`.`vibration` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('-1', '2019-10-15 13:00:08', '1', '0');
 
 INSERT INTO `monitor`.`voice` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('80', '2019-10-15 13:00:01', '1', '0');
 INSERT INTO `monitor`.`voice` (`v`, `ts`, `IsNormal`, `IsChecked`) VALUES ('90', '2019-10-15 13:00:02', '1', '0');

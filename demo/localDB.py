@@ -6,58 +6,62 @@
 import numpy as np
 import pymysql
 import datetime
-config={'host':'10.200.43.40','user':'root','password':'1','database':'monitor','charset':'utf8','port':3306}
+config={'host':'210.14.69.108','user':'root','password':'1','database':'iot','charset':'utf8','port':3306}
 
 
-
+temp =""
 
 # get new data in order to send to frontend
 def select_new_data():
     def get_new(str2, num=1):
-        sql = "select * from "+str(str2)+" order by ts desc limit " + str(num)
+        sql = "select value, time, isNormal from "+str(str2)+" order by time desc limit " + str(num)
         cur.execute(sql)
         data = cur.fetchall()
-        result = {"monitor": str2,}
         value = []
         time = []
-        IsNormal = []
+        normal = []
+        abnormal = []
+        temp = ""
         for row in data:
-            value.append(float(row[0]))
-            time.append((datetime.datetime(2019,10,23,10,29,5)-row[1]).seconds+1)
-            # time.append((datetime.datetime.now()-row[1]).seconds+1)
-            IsNormal.append(row[2])
-        value.reverse()
-        time.reverse()
-        IsNormal.reverse()
-        result['value'] = value
-        result['time'] = time
-        result['IsNormal'] = IsNormal
-        # print(result)
+            if temp == "":
+                temp = row[1]
+            if str2 == "temperature" or str2 == "humidity" or str2 == "current":
+                if row[2] == 0:
+                    normal.append([float(row[0]), ((temp-row[1]).seconds+1)])
+                else:
+                    abnormal.append([float(row[0]), ((temp-row[1]).seconds+1)])
+            else:
+                if row[2] == 0:
+                    normal.append([((temp-row[1]).seconds+1), float(row[0])])
+                else:
+                    abnormal.append([((temp-row[1]).seconds+1), float(row[0])])
+        data1=[normal, abnormal]
+
         if str2 == "locationx":
             locationx.append(value)
             locationx.append(time)
         elif str2 == "locationy":
             locationy.append(value)
-        data_result_list.append(result)
+        data_result_list[str2] = data1
 
-    data_result_list = []
+    data_result_list = {}
     locationx = []
     locationy = []
     connection = pymysql.connect(**config)
     cur = connection.cursor()
-    get_new("pressure")
-    get_new("temperature1")
+    get_new("temperature",1)
     get_new("humidity")
-    get_new("locationx",3)
-    get_new("locationy",3)
+    get_new("locationx",10)
+    get_new("locationy",10)
+    get_new("vibration",10)
 
     # print(data_result_list[2]['time'])
     cur.close()
     connection.close()
-    trail = np.array([locationx[0],locationy[0],locationx[1]]).T.tolist()
-    traildict = {'monitor':"trail",'value':trail}
+    # trail = np.array([locationx[0],locationy[0],locationx[1]]).T.tolist()
+    # traildict = {'monitor':"trail",'data':trail}
     # print(traildict)
-    data_result_list.append(traildict)
+    # data_result_list.append(traildict)
     return data_result_list
 
 

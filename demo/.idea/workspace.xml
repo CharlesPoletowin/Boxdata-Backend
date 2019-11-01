@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2ac31ec-4794-4395-a2b8-c0a6cd1b21ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/localDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/localDB.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../init.sql" afterDir="false" />
     </list>
@@ -138,6 +137,12 @@
       <workItem from="1571129301310" duration="693000" />
       <workItem from="1571719064619" duration="4536000" />
       <workItem from="1571795070906" duration="5230000" />
+      <workItem from="1571894986807" duration="2062000" />
+      <workItem from="1572318612401" duration="570000" />
+      <workItem from="1572329999394" duration="633000" />
+      <workItem from="1572503516664" duration="6621000" />
+      <workItem from="1572572024494" duration="7911000" />
+      <workItem from="1572593853740" duration="644000" />
     </task>
     <servers />
   </component>

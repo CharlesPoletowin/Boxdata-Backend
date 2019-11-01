@@ -31,9 +31,7 @@ def background_thread():
     while True:
         socketio.sleep(5)
         get_new = localDB.select_new_data()
-        for i in get_new:
-            # print(i)
-            socketio.emit('message', json.dumps(i,cls=DateEncoder))
+        socketio.emit('message', json.dumps(get_new,cls=DateEncoder))
 
 @app.route('/')
 def index():
