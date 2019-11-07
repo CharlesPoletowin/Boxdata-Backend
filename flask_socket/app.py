@@ -32,7 +32,7 @@ class DateEncoder(json.JSONEncoder):
 # 后台线程 产生数据，即刻推送至前端
 def background_thread():
     while True:
-        socketio.sleep(5)
+        socketio.sleep(1)
         get_new = localDB.select_new_data()
         socketio.emit('message', json.dumps(get_new,cls=DateEncoder))
 
@@ -51,4 +51,4 @@ def test_connect():
 
 
 if __name__ == '__main__':
-    socketio.run(app,host='0.0.0.0',port=5101,debug=True)
+    socketio.run(app,host='0.0.0.0',port=5101)

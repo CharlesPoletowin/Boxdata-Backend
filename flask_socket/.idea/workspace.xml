@@ -30,6 +30,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -169,6 +170,9 @@
       <workItem from="1572668090935" duration="4147000" />
       <workItem from="1572672799186" duration="141000" />
       <workItem from="1572673366992" duration="2567000" />
+      <workItem from="1572684787325" duration="722000" />
+      <workItem from="1573024766622" duration="33000" />
+      <workItem from="1573115227487" duration="15000" />
     </task>
     <servers />
   </component>

@@ -15,8 +15,6 @@ temp = ""
 # get new data in order to send to frontend
 def select_new_data():
     def demo():
-        connection = pymysql.connect(**config)
-        cur = connection.cursor()
         sql22 = "select x, y, time, isNormal from location where x is not null and y is not null order by time desc limit 10"
         cur.execute(sql22)
         data = cur.fetchall()
@@ -42,8 +40,6 @@ def select_new_data():
                 abnormal = t2.tolist()
         data1 = [normal, abnormal]
         data_result_list["location"] = data1
-        cur.close()
-        connection.close()
 
     def get_new(str2, num=1):
         sql = "select value, time, isNormal from "+str(str2)+" order by time desc limit " + str(num)
