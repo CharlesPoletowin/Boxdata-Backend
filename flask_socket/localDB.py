@@ -6,7 +6,7 @@
 import numpy as np
 import pymysql
 
-config = {'host': '10.200.43.149', 'user': 'root', 'password': '1', 'database': 'iot', 'charset': 'utf8', 'port': 3306}
+config = {'host': '210.14.69.108', 'user': 'root', 'password': '1', 'database': 'iot', 'charset': 'utf8', 'port': 3306}
 
 
 temp = ""
